@@ -17,6 +17,7 @@
 		F41AC9D6273C1799005065A1 /* SampleProject1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41AC9D5273C1799005065A1 /* SampleProject1Tests.m */; };
 		F41AC9E0273C1799005065A1 /* SampleProject1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41AC9DF273C1799005065A1 /* SampleProject1UITests.m */; };
 		F41AC9E2273C1799005065A1 /* SampleProject1UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41AC9E1273C1799005065A1 /* SampleProject1UITestsLaunchTests.m */; };
+		F41AC9F0273C1AE2005065A1 /* text.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AC9EF273C1AE2005065A1 /* text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		F41AC9DB273C1799005065A1 /* SampleProject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleProject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41AC9DF273C1799005065A1 /* SampleProject1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleProject1UITests.m; sourceTree = "<group>"; };
 		F41AC9E1273C1799005065A1 /* SampleProject1UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleProject1UITestsLaunchTests.m; sourceTree = "<group>"; };
+		F41AC9EE273C1AE1005065A1 /* SampleProject1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleProject1-Bridging-Header.h"; sourceTree = "<group>"; };
+		F41AC9EF273C1AE2005065A1 /* text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				F41AC9C7273C1799005065A1 /* LaunchScreen.storyboard */,
 				F41AC9CA273C1799005065A1 /* Info.plist */,
 				F41AC9CB273C1799005065A1 /* main.m */,
+				F41AC9EF273C1AE2005065A1 /* text.swift */,
+				F41AC9EE273C1AE1005065A1 /* SampleProject1-Bridging-Header.h */,
 			);
 			path = SampleProject1;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				TargetAttributes = {
 					F41AC9B5273C1798005065A1 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					F41AC9D0273C1799005065A1 = {
 						CreatedOnToolsVersion = 13.1;
@@ -269,6 +275,7 @@
 				F41AC9C1273C1798005065A1 /* ViewController.m in Sources */,
 				F41AC9BB273C1798005065A1 /* AppDelegate.m in Sources */,
 				F41AC9CC273C1799005065A1 /* main.m in Sources */,
+				F41AC9F0273C1AE2005065A1 /* text.swift in Sources */,
 				F41AC9BE273C1798005065A1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +367,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -419,6 +427,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -442,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3WQ9Z2LKN7;
@@ -460,6 +470,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.masaki.SampleProject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleProject1/SampleProject1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -469,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3WQ9Z2LKN7;
@@ -487,6 +501,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.masaki.SampleProject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleProject1/SampleProject1-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -494,6 +510,7 @@
 		F41AC9E9273C1799005065A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -517,6 +534,7 @@
 		F41AC9EA273C1799005065A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -540,6 +558,7 @@
 		F41AC9EC273C1799005065A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3WQ9Z2LKN7;
@@ -561,6 +580,7 @@
 		F41AC9ED273C1799005065A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3WQ9Z2LKN7;
